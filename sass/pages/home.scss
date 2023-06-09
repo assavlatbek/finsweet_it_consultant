@@ -80,6 +80,57 @@ body {
   cursor: pointer;
 }
 
+// Countable Styles
+
+.about-grow-box {
+  white-space: nowrap;
+}
+.about-grow-box::-webkit-scrollbar-track {
+  background: #ffffff;
+  height: 10px;
+  border-radius: 4px;
+  padding: 0;
+  border: rgb(0, 195, 255) 1px solid;
+}
+.about-grow-box::-webkit-scrollbar-thumb {
+  background: #000;
+  height: 10px;
+  border-radius: 4px;
+  padding: 0;
+  border: rgb(0, 195, 255) 1px solid;
+}
+.about-grow-box::-webkit-scrollbar {
+  border-radius: 4px;
+  padding: 0;
+  border: rgb(0, 195, 255) 1px solid;
+  height: 10px;
+}
+.main-footer-item {
+  min-width: 25%;
+}
+
+// Expertise styles
+
+.expertise {
+  background: #ecf8f9;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.invition:hover {
+  transition: 0.5s all;
+  background: #414141 !important;
+  color: #fff !important;
+}
+.invition:hover p {
+  transition: 0.5s all;
+  color: #fff !important;
+}
+.invition .d-flex {
+  align-items: start;
+  gap: 10px;
+}
+
 // Responsive to 768px
 
 @media (max-width: 768px) {

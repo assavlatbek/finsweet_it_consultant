@@ -91,6 +91,68 @@ body {
   cursor: pointer;
 }
 
+.about-grow-box {
+  white-space: nowrap;
+}
+
+.about-grow-box::-webkit-scrollbar-track {
+  background: #ffffff;
+  height: 10px;
+  border-radius: 4px;
+  padding: 0;
+  border: #00c3ff 1px solid;
+}
+
+.about-grow-box::-webkit-scrollbar-thumb {
+  background: #000;
+  height: 10px;
+  border-radius: 4px;
+  padding: 0;
+  border: #00c3ff 1px solid;
+}
+
+.about-grow-box::-webkit-scrollbar {
+  border-radius: 4px;
+  padding: 0;
+  border: #00c3ff 1px solid;
+  height: 10px;
+}
+
+.main-footer-item {
+  min-width: 25%;
+}
+
+.expertise {
+  background: #ecf8f9;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.invition:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background: #414141 !important;
+  color: #fff !important;
+}
+
+.invition:hover p {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #fff !important;
+}
+
+.invition .d-flex {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 10px;
+}
+
 @media (max-width: 768px) {
   .main-sub-title {
     font-size: 30px;

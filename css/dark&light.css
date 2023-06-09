@@ -52,6 +52,16 @@
   color: #fff !important;
 }
 
+.dark-mode .expertise {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.dark-mode .expertise .bg-white {
+  background: #3a3a3a !important;
+  color: #fff !important;
+}
+
 .dark-mode .text-dark {
   color: #b6b6b6 !important;
 }
