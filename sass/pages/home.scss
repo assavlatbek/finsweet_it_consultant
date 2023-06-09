@@ -1,0 +1,100 @@
+// body tyles
+
+body {
+  transition: 0.5s all;
+  background: #fff !important;
+  color: #000 !important;
+}
+
+// Main styles
+
+#main {
+  padding-top: 56px;
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: #232536;
+}
+.left-content,
+.right-content {
+  width: 50%;
+}
+.main-sub-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  margin: 20px 0;
+  line-height: 68px;
+}
+.main-sub-descr {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 20px 0;
+  opacity: 0.6;
+}
+.main-img {
+  width: 75%;
+}
+.main-footer::-webkit-scrollbar-track {
+  background: #ffffff;
+  height: 10px;
+  border-radius: 4px;
+  padding: 0;
+  border: black 1px solid;
+}
+.main-footer::-webkit-scrollbar-thumb {
+  background: #000;
+  height: 10px;
+  border-radius: 4px;
+  padding: 0;
+  border: black 1px solid;
+}
+.main-footer::-webkit-scrollbar {
+  border-radius: 4px;
+  padding: 0;
+  border: black 1px solid;
+  height: 10px;
+}
+.main-footer-item {
+  min-width: 25%;
+}
+
+// Animation Card Styles
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  transition: transform 0.3s;
+}
+
+.image-container:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+// Responsive to 768px
+
+@media (max-width: 768px) {
+  .main-sub-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .left-content,
+  .right-content {
+    width: 100%;
+  }
+  .main-img {
+    width: 100% !important;
+  }
+  .main-footer-item {
+    min-width: 49%;
+  }
+}

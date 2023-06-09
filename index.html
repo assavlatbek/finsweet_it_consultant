@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/dark&light.css" />
   </head>
   <body>
     <nav
-      class="navbar navbar-dark navbar-bg navbar-expand-md text-white fixed-top"
+      class="navbar border-bottom py-3 navbar-dark navbar-bg navbar-expand-md text-white fixed-top"
     >
       <div class="container">
         <a class="navbar-brand" href="#"
-          ><img class="w-100" src="../assits/svg/logo.svg" alt=""
+          ><img class="w-100" src="./assits/svg/logo.svg" alt=""
         /></a>
         <button
           class="navbar-toggler"
@@ -36,7 +37,7 @@
         >
           <div class="offcanvas-header navbar-bg text-white">
             <a href="" class="offcanvas-title" id="offcanvasNavbarLabel"
-              ><img src="../assits/svg/logo.svg" alt=""
+              ><img src="./assits/svg/logo.svg" alt=""
             /></a>
             <button
               type="button"
@@ -46,27 +47,29 @@
             ></button>
           </div>
           <div class="offcanvas-body navbar-bg">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul
+              class="navbar-nav justify-content-end align-items-md-center flex-grow-1 pe-3"
+            >
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link active" href="./index.html">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="./service.html">Services</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Company</a>
+                <a class="nav-link" href="./company.html">Company</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Career</a>
+                <a class="nav-link" href="./career.html">Career</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="./blog.html">Blog</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Contact us</a>
+                <a class="nav-link" href="./contact-us.html">Contact us</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link text-warning" href="#"
+                <a class="nav-link text-warning" href=""
                   >Clone project
                   <svg
                     width="24"
@@ -82,12 +85,113 @@
                   </svg>
                 </a>
               </li>
+              <div class="toggle-container">
+                <input
+                  type="checkbox"
+                  id="toggle-switch"
+                  class="toggle-checkbox"
+                />
+                <label for="toggle-switch" class="toggle-label">
+                  <img
+                    class="dark-light-icon"
+                    src="https://static-00.iconduck.com/assets.00/dark-theme-icon-512x512-185rlszm.png"
+                    alt=""
+                  />
+                </label>
+              </div>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-
+    <main class="main py-5" id="main">
+      <div class="container">
+        <div class="d-md-flex mt-5 gap-5 align-items-center">
+          <div class="left-content text-white">
+            <div class="main-content my-2">
+              <h1 class="main-sub-title">
+                Transform Your Idea Into Reality with Finsweet
+              </h1>
+              <p class="main-sub-descr">
+                The entire Finsweet team knows what's good with Webflow and you
+                can too with 1 week and a good attitude.
+              </p>
+              <img class="main-btn" src="./assits/home/main-btn.svg" alt="" />
+            </div>
+          </div>
+          <div class="right-content my-2 d-flex justify-content-md-end">
+            <img
+              src="./assits/home/main-sub.png"
+              class="main-img my-md-5 my-sm-0"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="main-footer overflow-x-auto overflow-y-hidden d-flex align-items-center text-white"
+        >
+          <div class="main-footer-item text-center">
+            <p class="text-light opacity-75 m-0">Our Client</p>
+            <h6 class="m-0">We've Worked with</h6>
+          </div>
+          <div class="main-footer-item text-center">
+            <img src="./assits/home/company1.svg" alt="" />
+          </div>
+          <div class="main-footer-item text-center">
+            <img src="./assits/home/company2.svg" alt="" />
+          </div>
+          <div class="main-footer-item text-center">
+            <img src="./assits/home/company3.svg" alt="" />
+          </div>
+          <div class="main-footer-item text-center">
+            <img src="./assits/home/company4.svg" alt="" />
+          </div>
+          <div class="main-footer-item text-end">
+            <img src="./assits/home/company5.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="about py-5" id="about">
+      <div class="container">
+        <p>ABOUT US</p>
+        <div class="row">
+          <div class="col-md-6 col-12 my-2">
+            <h1 class="m-0 p-0">
+              The company leads entire webdesign process from concept to
+              delivery.
+            </h1>
+          </div>
+          <div class="col-md-6 col-12 my-2">
+            <h1 class="m-0 p-0">The Era Of Technology.</h1>
+            <p class="text-dark my-2 mx-0 p-0">
+              Through True Rich Attended does no end it his mother since real
+              had half every him case in packages enquire we up ecstatic
+              unsatiable saw his giving Remain expense you position concluded.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-lg-4 my-2">
+            <div class="image-container">
+              <img src="./assits/home/about-content-1.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-lg-4 my-2">
+            <div class="image-container">
+              <img src="./assits/home/about-content-2.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-lg-4 my-2">
+            <div class="image-container">
+              <img src="./assits/home/about-content-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

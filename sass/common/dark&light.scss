@@ -1,0 +1,45 @@
+.dark-light-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.toggle-container {
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 999999999999999;
+  display: inline-block;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-label i {
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label i:last-child {
+  transform: translateY(-100%);
+}
+
+.toggle-checkbox:checked + .toggle-label i:first-child {
+  transform: translateY(100%);
+}
+.dark-mode {
+  transition: 0.5s all;
+  background: #000 !important;
+  color: #fff !important;
+}
+.dark-mode .text-dark {
+  color: #b6b6b6 !important;
+}
