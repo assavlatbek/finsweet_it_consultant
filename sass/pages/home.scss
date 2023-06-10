@@ -117,18 +117,26 @@ body {
   display: flex;
   align-items: center;
 }
-.invition:hover {
+.invition:hover,
+.service-card:hover {
   transition: 0.5s all;
   background: #414141 !important;
   color: #fff !important;
 }
-.invition:hover p {
+.invition:hover p,
+.service-card:hover p {
   transition: 0.5s all;
   color: #fff !important;
 }
 .invition .d-flex {
   align-items: start;
   gap: 10px;
+}
+
+// Services
+
+.services {
+  background: #ffe6d2;
 }
 
 // Responsive to 768px

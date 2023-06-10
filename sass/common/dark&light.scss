@@ -1,8 +1,8 @@
 .dark-light-icon {
   width: 40px;
   height: 40px;
+  border-radius: 50px;
 }
-
 .toggle-container {
   background: #ffffff;
   padding: 5px;
@@ -14,6 +14,7 @@
 }
 
 .toggle-checkbox {
+  border-radius: 50px;
   display: none;
 }
 
@@ -21,6 +22,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .toggle-label i {
@@ -37,18 +39,45 @@
 }
 .dark-mode {
   transition: 0.5s all;
-  background: #000 !important;
+  background: #282828 !important;
   color: #fff !important;
+}
+.dark-mode #main {
+  transition: 0.5s all;
+  background: #212121;
+}
+.dark-mode nav,
+.dark-mode .services {
+  transition: 0.5s all;
+  background: #242424;
+}
+.dark-mode nav *:not(.toggle-container) {
+  transition: 0.5s all;
+  background: #232323;
 }
 .dark-mode .expertise {
-  background: #000 !important;
+  transition: 0.5s all;
+  background: #212121 !important;
   color: #fff !important;
 }
-.dark-mode .expertise .bg-white {
+.dark-mode .bg-white {
+  transition: 0.5s all;
   background: #3a3a3a !important;
   color: #fff !important;
 }
+.dark-mode .bg-white:hover {
+  transition: 0.5s all;
 
+  background: #fff !important;
+}
+.dark-mode .bg-white:hover * {
+  transition: 0.5s all;
+
+  color: #000 !important;
+}
 .dark-mode .text-dark {
   color: #b6b6b6 !important;
+}
+.dark-mode #back-to-top-btn {
+  border: 2px solid #fff;
 }

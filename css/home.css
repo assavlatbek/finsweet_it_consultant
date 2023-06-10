@@ -133,14 +133,16 @@ body {
           align-items: center;
 }
 
-.invition:hover {
+.invition:hover,
+.service-card:hover {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   background: #414141 !important;
   color: #fff !important;
 }
 
-.invition:hover p {
+.invition:hover p,
+.service-card:hover p {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   color: #fff !important;
@@ -151,6 +153,10 @@ body {
       -ms-flex-align: start;
           align-items: start;
   gap: 10px;
+}
+
+.services {
+  background: #ffe6d2;
 }
 
 @media (max-width: 768px) {
