@@ -107,3 +107,13 @@
 .dark-mode #back-to-top-btn {
   border: 2px solid #fff;
 }
+
+.dark-mode-alert {
+  -webkit-transition: 3s all;
+  transition: 3s all;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 9999999999999999999;
+}

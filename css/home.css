@@ -1,6 +1,4 @@
 body {
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
   background: #fff !important;
   color: #000 !important;
 }
@@ -143,8 +141,6 @@ body {
 
 .invition:hover p,
 .service-card:hover p {
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
   color: #fff !important;
 }
 
@@ -157,6 +153,10 @@ body {
 
 .services {
   background: #ffe6d2;
+}
+
+.service-card {
+  border: 2px solid #000;
 }
 
 @media (max-width: 768px) {

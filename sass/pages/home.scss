@@ -1,7 +1,6 @@
 // body tyles
 
 body {
-  transition: 0.5s all;
   background: #fff !important;
   color: #000 !important;
 }
@@ -125,7 +124,6 @@ body {
 }
 .invition:hover p,
 .service-card:hover p {
-  transition: 0.5s all;
   color: #fff !important;
 }
 .invition .d-flex {
@@ -137,6 +135,9 @@ body {
 
 .services {
   background: #ffe6d2;
+}
+.service-card {
+  border: 2px solid #000;
 }
 
 // Responsive to 768px

@@ -65,7 +65,6 @@ let typed4 = new Typed('.typing3', {
 
 var backToTopButton = document.getElementById('back-to-top-btn');
 
-// Show the button when scrolling down
 window.addEventListener('scroll', function () {
     if (window.pageYOffset > 100) {
         backToTopButton.classList.add('show');
@@ -74,10 +73,32 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// Scroll to top when the button is clicked
 backToTopButton.addEventListener('click', function () {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
 });
+
+// Auto Dark Mode Alert
+
+const closeBtn = document.querySelector('.remove-perent')
+
+closeBtn.addEventListener('click', function (e) {
+    const target = e.target
+    const perent = target.parentElement.parentElement
+    perent.style.display = 'none';
+})
+
+const ligt_mode_btn = document.querySelector('.ligt-mode-btn')
+const dark_mode_btn = document.querySelector('.dark-mode-btn')
+
+ligt_mode_btn.addEventListener('click', function () {
+    document.body.classList.remove('dark-mode')
+})
+
+
+dark_mode_btn.addEventListener('click', function () {
+    document.body.classList.add('dark-mode')
+    closeBtn.classList.add('btn-white')
+})

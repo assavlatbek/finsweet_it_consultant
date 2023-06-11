@@ -10,3 +10,14 @@
 .no-wrap {
   white-space: nowrap;
 }
+
+.mini-container {
+  max-width: 800px;
+  margin: 1px auto;
+}
+
+@media (max-width: 800px) {
+  .mini-container {
+    margin: 0 10px;
+  }
+}
