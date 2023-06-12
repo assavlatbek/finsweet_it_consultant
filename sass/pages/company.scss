@@ -104,8 +104,10 @@ main {
       }
     }
     .our__story {
+      margin-top: 96px;
+      margin-bottom: 96px;
       display: flex;
-      align-items: center;
+      align-items: start;
       justify-content: space-between;
       .story__left {
         display: flex;
@@ -140,8 +142,97 @@ main {
         }
       }
       .story__right {
+        background: rgba(255, 211, 175, 0.57);
+        padding: 62px 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        .first__row,
+        .second__row {
+          display: flex;
+          justify-content: space-between;
+          gap: 62px;
+          .boxes {
+            h1 {
+              font-weight: 600;
+              font-size: 36px;
+              line-height: 54px;
+              color: #232536;
+            }
+            span {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 28px;
+              color: #232536;
+              opacity: 0.87;
+            }
+            .cl__shapes {
+              display: flex;
+              .colors {
+                height: 6px;
+              }
+              .color__1 {
+                width: 10px;
+                background: #444cfc;
+              }
+              .color__2 {
+                width: 45px;
+                background: #ffd3af;
+              }
+              .color__3 {
+                width: 17px;
+                background: #ffa155;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1000px) {
+      .our__story {
+        max-width: 100%;
+        flex-direction: column;
+        .story__left {
+          text-align: center;
+          h1 {
+            max-width: 100%;
+          }
+          p {
+            max-width: 100%;
+          }
+        }
+        .story__right {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+    }
+    @media (max-width: 540px) {
+      .our__story {
+        .first__row,
+        .second__row {
+          align-items: center;
+          flex-direction: column;
+        }
+      }
+    }
+    .sponsors {
+      background: #fafafc;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media (max-width: 976px) {
+      .sponsors {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .sponsors {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
