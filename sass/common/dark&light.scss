@@ -55,6 +55,10 @@
   transition: 0.5s all;
   background: #232323;
 }
+.dark-mode nav .btn-close,
+.dark-mode nav .navbar-toggler-icon {
+  color: #fff !important;
+}
 .dark-mode .expertise {
   transition: 0.5s all;
   background: #212121 !important;
@@ -67,7 +71,6 @@
 }
 .dark-mode .bg-white:hover {
   transition: 0.5s all;
-
   background: #fff !important;
 }
 .dark-mode .bg-white:hover * {
@@ -80,6 +83,27 @@
 }
 .dark-mode #back-to-top-btn {
   border: 2px solid #fff;
+}
+.dark-mode .process .item {
+  transition: 0.5s all;
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid white !important;
+}
+.dark-mode .process .item:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+.dark-mode .process .item:hover p {
+  color: #232323 !important;
+}
+.process .item:hover {
+  transition: 0.5s all;
+  background: #353535 !important;
+  color: #ffffff !important;
+}
+.process .item:hover p {
+  color: #d0d0d0 !important;
 }
 .dark-mode-alert {
   transition: 3s all;

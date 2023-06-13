@@ -119,6 +119,7 @@ body {
 .invition:hover,
 .service-card:hover {
   transition: 0.5s all;
+  box-shadow: rgba(255, 0, 0, 0.24) 0px 3px 8px;
   background: #414141 !important;
   color: #fff !important;
 }
@@ -139,6 +140,28 @@ body {
 .service-card {
   border: 2px solid #000;
 }
+
+// process
+
+.process .item {
+  background: #fff;
+  border: 1px solid #050505 !important;
+}
+.icon-div {
+  display: flex;
+  align-items: start;
+  height: 100px;
+}
+.icon-div img {
+  width: 100px;
+  height: 100px;
+}
+
+.item-child {
+  margin-bottom: -15px;
+}
+
+// Costumers
 
 // Responsive to 768px
 
